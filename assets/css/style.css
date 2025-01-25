@@ -25,6 +25,14 @@
     width: 10%;
     height: 30px;
 }
+.btn {
+    background-color: rgb(68, 114, 68);
+}
+.btn:hover {
+    background-color: rgb(158, 186, 158);
+    color: black;
+    transition: all 0.1s ease-in-out;
+}
 .button:hover {
     background-color: rgb(158, 186, 158);
     color: black;
@@ -36,6 +44,16 @@ section {
     border-radius: 10px;
 }
 
+@media screen and (max-width: 768px) {
+    .typewriter {
+        font-size: 1.3rem;
+    }
+    .button {
+        font-size: 10px;
+        width: 100px;
+    }
+  }
+  
 
 @keyframes typing {
     from {
