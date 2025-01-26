@@ -1,3 +1,7 @@
+.container {
+    margin-top: 165px;
+}
+/* Typewriter animasi */
 .typewriter {
     font-size: 2.5rem;
     font-weight: bold;
@@ -44,6 +48,11 @@ section {
     border-radius: 10px;
 }
 
+footer {
+    position: sticky;
+    width: 100%;
+    bottom: 0;
+}
 @media screen and (max-width: 768px) {
     .typewriter {
         font-size: 1.3rem;
@@ -55,6 +64,7 @@ section {
   }
   
 
+/* Animasi tambahan */
 @keyframes typing {
     from {
         width: 0;
@@ -66,13 +76,11 @@ section {
 }
 
 @keyframes blink {
-
-    from,
-    to {
+    from, to {
         border-color: transparent;
     }
 
     50% {
-        border-color: white;
+        border-color: black;
     }
 }

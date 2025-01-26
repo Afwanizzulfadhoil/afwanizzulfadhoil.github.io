@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Define the text for the paragraph
+    // Define the text for the heading and paragraph
+    const headingText = "Welcome To Fadoiru Lexiana!";
     const paragraphTexts = [
         "Our platform is here to bring ideas to life.",
         "Learn more about how we can help you.",
@@ -7,11 +8,15 @@ document.addEventListener("DOMContentLoaded", () => {
         "Empowering creativity through technology."
     ];
 
+    const typewriterHeading = document.getElementById("typewriter-heading");
     const typewriterParagraph = document.getElementById("typewriter-paragraph");
 
-    let paragraphIndex = 0;
+    // Set heading text (static)
+    typewriterHeading.textContent = headingText;
+
+    let paragraphIndex = 0; // Current paragraph index
+    let charIndex = 0; // Current character index for typing
     let isDeleting = false; // Track if we are deleting or typing
-    let charIndex = 0; // Current character index
     const typingSpeed = 100; // Speed of typing (ms per character)
     const deletingSpeed = 50; // Speed of deleting (ms per character)
     const delayBetweenTexts = 2000; // Delay before switching to the next text
@@ -52,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     typeEffect();
 });
 
-
-function toAboutPage(){
+// Redirect function for the button
+function toAboutPage() {
     window.location.href = "about.html";
 }
