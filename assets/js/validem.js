@@ -1,4 +1,4 @@
-// Fungsi untuk mengirimkan email otomatis
+// untuk mengirimkan contact form ke email langsung
 document.querySelector("form").addEventListener("submit", function (event) {
     event.preventDefault();
 
