@@ -5,7 +5,7 @@ This is the personal website of Afwan Izzul Fadhoil. It showcases his work, skil
 ## Folder Structure
 
 ```
-/C:/Users/USER/Desktop/afwanizzulfadhoil.github.io
+AfwanIzzulFadhoil.github.io
 │
 ├── css
 │   └── styles.css
