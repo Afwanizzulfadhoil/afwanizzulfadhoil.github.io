@@ -10,8 +10,6 @@ document.querySelectorAll('a.nav-link').forEach(anchor => {
     });
 });
 
-
-
 // Show 404 page or keep loading if offline
 window.addEventListener('offline', function () {
     document.getElementById('loading-screen').innerHTML = `
