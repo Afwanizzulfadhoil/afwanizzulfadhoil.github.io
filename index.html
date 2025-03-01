@@ -1,84 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Afwan Izzul Fadhoil</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #000;
-            color: #fff;
-        }
-        .hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body>
-    <!-- Hero Section -->
-    <section class="hero bg-dark text-white text-center">
-        <div class="container">
-            <h1 class="display-4">Hi, I am a Designer & Webflow Expert</h1>
-            <p class="lead">6+ years of experience in Webflow development</p>
-            <a href="#contact" class="btn btn-success">Let's Chat on WhatsApp</a>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-5 text-center">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I specialize in designing and developing beautiful and functional websites.</p>
-        </div>
-    </section>
+    <!-- Main Content -->
+    <div id="main-content">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Afwan Izzul Fadhoil</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Tentang Saya</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Pekerjaan Saya</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Hubungi Saya</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-5 text-center bg-light text-dark">
-        <div class="container">
-            <h2>My Work</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 1</h5>
+        <!-- Hero Section -->
+        <section class="hero bg-dark text-white text-center">
+            <div class="container">
+                <h1 class="display-4">Hai, Saya Afwan Izzul Fadhoil</h1>
+                <p class="lead">Saya seorang pengembang web yang berdedikasi.</p>
+                <a href="#contact" class="btn btn-success">Ayo Ngobrol di WhatsApp</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-5 text-center">
+            <div class="container">
+                <h2>Tentang Saya</h2>
+                <p>Saya mengkhususkan diri dalam merancang dan mengembangkan situs web yang indah dan fungsional.</p>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-5 text-center bg-light text-dark">
+            <div class="container">
+                <h2>Pekerjaan Saya</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="img/project1.jpg" class="card-img-top" alt="Proyek 1" data-bs-toggle="modal"
+                                data-bs-target="#projectModal1">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyek 1</h5>
+                                <p class="card-text">Deskripsi singkat tentang proyek 1.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 2</h5>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="img/project2.jpg" class="card-img-top" alt="Proyek 2" data-bs-toggle="modal"
+                                data-bs-target="#projectModal2">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyek 2</h5>
+                                <p class="card-text">Deskripsi singkat tentang proyek 2.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 3</h5>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="img/project3.jpg" class="card-img-top" alt="Proyek 3" data-bs-toggle="modal"
+                                data-bs-target="#projectModal3">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyek 3</h5>
+                                <p class="card-text">Deskripsi singkat tentang proyek 3.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 text-center">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Let's create something amazing together.</p>
-            <a href="https://wa.me/" class="btn btn-success">Chat on WhatsApp</a>
+        <!-- Contact Section -->
+        <section id="contact" class="py-5 text-center">
+            <div class="container">
+                <h2>Hubungi Saya</h2>
+                <p>Ayo buat sesuatu yang luar biasa bersama.</p>
+                <a href="https://wa.me/+6285233545401" class="btn btn-success">Ngobrol di WhatsApp</a>
+            </div>
+        </section>
+
+        <!-- Project Modals -->
+        <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModalLabel1">Proyek 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/project1.jpg" class="img-fluid" alt="Proyek 1">
+                        <p>Deskripsi lengkap tentang proyek 1.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+
+        <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModalLabel2">Proyek 2</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/project2.jpg" class="img-fluid" alt="Proyek 2">
+                        <p>Deskripsi lengkap tentang proyek 2.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalLabel3"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModalLabel3">Proyek 3</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/project3.jpg" class="img-fluid" alt="Proyek 3">
+                        <p>Deskripsi lengkap tentang proyek 3.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>
