@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afwan Izzul Fadhoil</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
@@ -27,13 +28,13 @@
                             <a class="nav-link" href="#about">Tentang Saya</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Pekerjaan Saya</a>
+                            <a class="nav-link" href="#portfolio">Project Saya</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Hubungi Saya</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="projects.html">Proyek Saya</a>
+                            <a class="nav-link" href="projects.html">Project Saya</a>
                         </li>
                     </ul>
                 </div>
@@ -45,50 +46,64 @@
             <div class="container">
                 <h1 class="display-4">Hai, Saya Afwan Izzul Fadhoil</h1>
                 <p class="lead">Saya seorang pengembang web yang berdedikasi.</p>
-                <a href="#contact" class="btn btn-success">Ayo Ngobrol di WhatsApp</a>
             </div>
         </section>
 
         <!-- About Section -->
-        <section id="about" class="py-5 text-center">
+        <section id="about" class="py-5">
             <div class="container">
-                <h2>Tentang Saya</h2>
-                <p>Saya mengkhususkan diri dalam merancang dan mengembangkan situs web yang indah dan fungsional.</p>
+                <h2 class="text-center">Tentang Saya</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-center">
+                        <picture>
+                            <source srcset="/assets/img/Profile.jpg" type="image/svg+xml">
+                            <img src=".." class="img-fluid" alt="Afwan Izzul Fadhoil">
+                        </picture>
+                    </div>
+                    <div class="col-md-8">
+                        <p>Saya adalah seorang pengembang web yang bersemangat menciptakan pengalaman pengguna yang
+                            menarik dan responsif. Dengan keahlian di bidang front-end, saya memanfaatkan framework
+                            <q>Bootstrap</q> untuk menghasilkan desain yang modern dan fungsional. Saya percaya bahwa
+                            setiap detail kecil dapat membuat perbedaan besar dalam menciptakan sebuah karya yang luar
+                            biasa.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Portfolio Section -->
         <section id="portfolio" class="py-5 text-center bg-light text-dark">
             <div class="container">
-                <h2>Pekerjaan Saya</h2>
+                <h2>Project Saya</h2>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card mb-4">
-                            <img src="img/project1.jpg" class="card-img-top" alt="Proyek 1" data-bs-toggle="modal"
-                                data-bs-target="#projectModal1">
+                            <img src="/assets/img/Personal-diary.png" class="card-img-top" alt="Proyek 1"
+                                data-bs-toggle="modal" data-bs-target="#projectModal1">
                             <div class="card-body">
                                 <h5 class="card-title">Personal Diary</h5>
-                                <p class="card-text">Website untuk Catatan Sehari - hari atau kenangan diri sendiri</p>
+                                <p class="card-text">Tugas sekolah dalam membuat website diary.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4">
-                            <img src="img/project2.jpg" class="card-img-top" alt="Proyek 2" data-bs-toggle="modal"
-                                data-bs-target="#projectModal2">
+                            <img src="/assets/img/Fadoiru-pedia.png" class="card-img-top" alt="Proyek 2"
+                                data-bs-toggle="modal" data-bs-target="#projectModal2">
                             <div class="card-body">
-                                <h5 class="card-title">Proyek 2</h5>
-                                <p class="card-text">Deskripsi singkat tentang proyek 2.</p>
+                                <h5 class="card-title">Fadoiru Pedia</h5>
+                                <p class="card-text">Tugas sekolah dalam membuat website favorite movies.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4">
-                            <img src="img/project3.jpg" class="card-img-top" alt="Proyek 3" data-bs-toggle="modal"
-                                data-bs-target="#projectModal3">
+                            <img src="/assets/img/Bucketslist.png" class="card-img-top" alt="Proyek 3"
+                                data-bs-toggle="modal" data-bs-target="#projectModal3">
                             <div class="card-body">
-                                <h5 class="card-title">Proyek 3</h5>
-                                <p class="card-text">Deskripsi singkat tentang proyek 3.</p>
+                                <h5 class="card-title">Bucket list</h5>
+                                <p class="card-text">Tugas Sekolah membuat website List.</p>
                             </div>
                         </div>
                     </div>
@@ -97,11 +112,34 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-5 text-center">
+        <section id="contact" class="py-5 bg-dark text-white">
             <div class="container">
-                <h2>Hubungi Saya</h2>
-                <p>Ayo buat sesuatu yang luar biasa bersama.</p>
-                <a href="https://wa.me/+6285233545401" class="btn btn-success">Ngobrol di WhatsApp</a>
+                <div class="row">
+                    <!-- Social Media Links -->
+                    <div class="col-md-4 text-center mb-3 mb-md-0">
+                        <h5>Ikuti Saya</h5>
+                        <a href="https://facebook.com" class="text-white text-decoration-none me-3"><i
+                                class="bi bi-facebook"></i> Afwan Izzul Fadhoil</a><br>
+                        <a href="https://instagram.com" class="text-white text-decoration-none me-3"><i
+                                class="bi bi-linkedin"></i> Afwan Izzul Fadhoil</a><br>
+                        <a href="https://linkedin.com" class="text-white text-decoration-none"><i
+                                class="bi bi-instagram"></i> Fadoiru</a>
+                    </div>
+
+                    <!-- Copyright -->
+                    <div class="col-md-4 text-center mb-3 mb-md-0">
+                        <p>&copy; 2024 Afwan Izzul Fadhoil. All Rights Reserved.</p>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-md-4 text-center">
+                        <h5>Hubungi Saya</h5>
+                        <p>Email: <a href="mailto:fadoiru@gmail.com"
+                                class="text-white text-decoration-none">fadoiru@gmail.com</a></p>
+                        <p>Telepon: <a href="tel:+6285233545401"
+                                class="text-white text-decoration-none">085233545401</a></p>
+                    </div>
+                </div>
             </div>
         </section>
 
