@@ -19,3 +19,21 @@ window.addEventListener('offline', function () {
         </div>
     `;
 });
+
+// pop up image
+// Ambil elemen
+var modal = document.getElementById("myModal");
+var img = document.getElementById("myImage");
+var modalImg = document.getElementById("imgPopup");
+var closeBtn = document.getElementsByClassName("close")[0];
+
+// Saat gambar diklik
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+}
+
+// Saat tombol close diklik
+closeBtn.onclick = function() { 
+  modal.style.display = "none";
+}

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+    <div class="loading-screen"></div>
     <!-- Main Content -->
     <div id="main-content">
         <!-- Navbar -->
@@ -57,7 +57,11 @@
                     <div class="col-md-4 text-center">
                         <picture>
                             <source srcset="/assets/img/Profile.jpg" type="image/svg+xml">
-                            <img src=".." class="img-fluid" alt="Afwan Izzul Fadhoil">
+                            <img id="MyImage" src=".." class="img-fluid" alt="Afwan Izzul Fadhoil"  style="width:200px; cursor:pointer;">
+                            <div id="myModal" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="imgPopup">
+                            </div>
                         </picture>
                     </div>
                     <div class="col-md-8">
@@ -120,8 +124,9 @@
                         <h5>Ikuti Saya</h5>
                         <a href="https://facebook.com/afwanizzulfadhoil" class="text-white text-decoration-none me-3"><i
                                 class="bi bi-facebook"></i> Afwan Izzul Fadhoil</a><br>
-                        <a href="https://linkedin.com/afwanizzulafadhoil" class="text-white text-decoration-none me-3"><i
-                                class="bi bi-linkedin"></i> Afwan Izzul Fadhoil</a><br>
+                        <a href="https://linkedin.com/afwanizzulafadhoil"
+                            class="text-white text-decoration-none me-3"><i class="bi bi-linkedin"></i> Afwan Izzul
+                            Fadhoil</a><br>
                         <a href="https://instagram.com/fadoiru" class="text-white text-decoration-none"><i
                                 class="bi bi-instagram"></i> Fadoiru</a>
                     </div>
