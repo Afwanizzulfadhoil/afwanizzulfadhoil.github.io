@@ -21,6 +21,3 @@ AfwanIzzulFadhoil.github.io
 ```
 
 ## How to Use
-
-1. Open `index.html` in a web browser to view the website.
-2. Modify the files in the `css`, `img`, and `js` folders to customize the website.
