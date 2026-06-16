@@ -226,6 +226,7 @@ section {
     margin-bottom: 1.5rem;
     background: linear-gradient(135deg, #a855f7, #ec4899, #ef4444);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% auto;
     animation: gradientShift 5s ease infinite;
